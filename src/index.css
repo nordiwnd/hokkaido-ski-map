@@ -1,0 +1,171 @@
+/* --- 1. 基本変数とリセット --- */
+:root {
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* 地図アプリなので白ベースで固定（OSのダークモードに引きずられないようにする） */
+  color-scheme: light;
+  --bg-panel: rgba(255, 255, 255, 0.95);
+  --text-main: #2d3436;
+  --text-sub: #636e72;
+  --accent: #0984e3;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+  background-color: #f0f2f5;
+  color: var(--text-main);
+}
+
+html, body, #root, .app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* 地図アプリなので全体スクロールは禁止 */
+}
+
+/* --- 2. 地図コンテナ --- */
+.map-container {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* --- 3. フィルターパネル (UI Overlay) --- */
+.ui-overlay {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  
+  background: var(--bg-panel);
+  color: var(--text-main); /* 文字色を確実に黒系にする */
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: var(--shadow);
+  width: 280px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  pointer-events: auto;
+}
+
+.ui-overlay h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--text-main);
+}
+
+.ui-overlay p {
+  font-size: 0.85rem;
+  color: var(--text-sub);
+  margin-bottom: 15px;
+}
+
+.filter-group {
+  margin-bottom: 15px;
+}
+
+.filter-group label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+/* 一日券予算などの強調テキスト用 */
+.price-display {
+  color: var(--accent);
+  font-size: 1rem;
+}
+
+/* --- 4. フォーム要素の装飾 --- */
+input[type="range"] {
+  width: 100%;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+/* チェックボックス横並び用 */
+.checkbox-label {
+  flex-direction: row !important;
+  align-items: center;
+  gap: 10px !important;
+  cursor: pointer;
+}
+
+/* --- 5. 詳細ドロワー (スマホ/PC共通) --- */
+.drawer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 1001;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(100%);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  max-height: 60vh;
+}
+
+.drawer.open {
+  transform: translateY(0);
+}
+
+.drawer-content {
+  padding: 24px;
+  padding-top: 32px;
+  position: relative;
+  color: var(--text-main);
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: #f1f2f6;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-sub);
+}
+
+/* スキー場カテゴリタグ */
+.tag {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.tag.major { background: #ffeaa7; color: #d63031; }
+.tag.local { background: #fab1a0; color: #e17055; }
+
+/* --- 6. レスポンシブ --- */
+@media (max-width: 600px) {
+  .ui-overlay {
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    width: auto;
+    padding: 12px 16px;
+  }
+}

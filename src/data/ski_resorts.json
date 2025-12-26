@@ -1,0 +1,905 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.5147662,
+          42.9470848
+        ]
+      },
+      "properties": {
+        "id": "IWANAI RESORT",
+        "name": "IWANAI RESORT",
+        "category": "local",
+        "ticketPrice": 3000,
+        "ticketPrice4h": 2500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4448652,
+          43.5897157
+        ]
+      },
+      "properties": {
+        "id": "美瑛町民スキー場",
+        "name": "美瑛町民スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4796109,
+          43.4627806
+        ]
+      },
+      "properties": {
+        "id": "日の出スキー場",
+        "name": "日の出スキー場",
+        "category": "local",
+        "ticketPrice": 1000,
+        "ticketPrice4h": 1000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.807993,
+          43.1747243
+        ]
+      },
+      "properties": {
+        "id": "サホロスキー場",
+        "name": "サホロスキー場",
+        "category": "major",
+        "ticketPrice": 8800,
+        "ticketPrice4h": 7000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.8262977,
+          43.0910878
+        ]
+      },
+      "properties": {
+        "id": "新得山スキー場",
+        "name": "新得山スキー場",
+        "category": "local",
+        "ticketPrice": 2000,
+        "ticketPrice4h": 1200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0968527,
+          42.5212981
+        ]
+      },
+      "properties": {
+        "id": "サンライバスキー場",
+        "name": "サンライバスキー場",
+        "category": "local",
+        "ticketPrice": 3800,
+        "ticketPrice4h": 2800,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9811259,
+          42.5558458
+        ]
+      },
+      "properties": {
+        "id": "オロフレスキー場",
+        "name": "オロフレスキー場",
+        "category": "local",
+        "ticketPrice": 1600,
+        "ticketPrice4h": 1300,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.2779874,
+          44.721153
+        ]
+      },
+      "properties": {
+        "id": "音威富士スキー場",
+        "name": "音威富士スキー場",
+        "category": "local",
+        "ticketPrice": 2500,
+        "ticketPrice4h": 1300,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.5263719,
+          43.8096271
+        ]
+      },
+      "properties": {
+        "id": "増毛町営暑寒別岳スキー場",
+        "name": "増毛町営暑寒別岳スキー場",
+        "category": "local",
+        "ticketPrice": 2500,
+        "ticketPrice4h": 2500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.7976136,
+          43.5365344
+        ]
+      },
+      "properties": {
+        "id": "新十津川町そっち岳スキー場",
+        "name": "新十津川町そっち岳スキー場",
+        "category": "local",
+        "ticketPrice": 1700,
+        "ticketPrice4h": 1000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.0131735,
+          43.5201093
+        ]
+      },
+      "properties": {
+        "id": "かもい岳国際スキー場",
+        "name": "かもい岳国際スキー場",
+        "category": "local",
+        "ticketPrice": 6000,
+        "ticketPrice4h": 5000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.9465694,
+          43.3193683
+        ]
+      },
+      "properties": {
+        "id": "美唄国設スキー場",
+        "name": "美唄国設スキー場",
+        "category": "local",
+        "ticketPrice": 2700,
+        "ticketPrice4h": 2000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.4509583,
+          42.9286175
+        ]
+      },
+      "properties": {
+        "id": "ダイナスティスキーリゾート",
+        "name": "ダイナスティスキーリゾート",
+        "category": "local",
+        "ticketPrice": 2900,
+        "ticketPrice4h": 2500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.6124244,
+          43.0693198
+        ]
+      },
+      "properties": {
+        "id": "星野リゾートトマムスキー場",
+        "name": "星野リゾートトマムスキー場",
+        "category": "major",
+        "ticketPrice": 7700,
+        "ticketPrice4h": 6700,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.1355011,
+          44.0147012
+        ]
+      },
+      "properties": {
+        "id": "ほろたちスキー場",
+        "name": "ほろたちスキー場",
+        "category": "local",
+        "ticketPrice": 3500,
+        "ticketPrice4h": 2500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5408216,
+          43.7308885
+        ]
+      },
+      "properties": {
+        "id": "キャンモア・スキービレッジ",
+        "name": "キャンモア・スキービレッジ",
+        "category": "local",
+        "ticketPrice": 3000,
+        "ticketPrice4h": 2500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.2991737,
+          43.7584513
+        ]
+      },
+      "properties": {
+        "id": "サンタプレゼントパーク",
+        "name": "サンタプレゼントパーク",
+        "category": "local",
+        "ticketPrice": 4200,
+        "ticketPrice4h": 3600,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3309547,
+          43.7481778
+        ]
+      },
+      "properties": {
+        "id": "伊ノ沢市民スキー場",
+        "name": "伊ノ沢市民スキー場",
+        "category": "local",
+        "ticketPrice": 1200,
+        "ticketPrice4h": 700,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4173752,
+          44.0368432
+        ]
+      },
+      "properties": {
+        "id": "和寒東山スキー場",
+        "name": "和寒東山スキー場",
+        "category": "local",
+        "ticketPrice": 2000,
+        "ticketPrice4h": 1000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0292794,
+          43.1384508
+        ]
+      },
+      "properties": {
+        "id": "朝里川温泉スキー場",
+        "name": "朝里川温泉スキー場",
+        "category": "local",
+        "ticketPrice": 4700,
+        "ticketPrice4h": 1500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.2768641,
+          42.9541706
+        ]
+      },
+      "properties": {
+        "id": "Fu'sスノーエリア",
+        "name": "Fu'sスノーエリア",
+        "category": "local",
+        "ticketPrice": 3200,
+        "ticketPrice4h": 2300,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5108597,
+          44.4044246
+        ]
+      },
+      "properties": {
+        "id": "名寄ピヤシリスキー場",
+        "name": "名寄ピヤシリスキー場",
+        "category": "local",
+        "ticketPrice": 4200,
+        "ticketPrice4h": 3600,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3411815,
+          44.265565
+        ]
+      },
+      "properties": {
+        "id": "士別市日向スキー場",
+        "name": "士別市日向スキー場",
+        "category": "local",
+        "ticketPrice": 2400,
+        "ticketPrice4h": 2000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5011233,
+          43.9340426
+        ]
+      },
+      "properties": {
+        "id": "ぴっぷスキー場",
+        "name": "ぴっぷスキー場",
+        "category": "local",
+        "ticketPrice": 2800,
+        "ticketPrice4h": 2300,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.8020353,
+          43.6540793
+        ]
+      },
+      "properties": {
+        "id": "旭岳ロープウェイ",
+        "name": "旭岳ロープウェイ",
+        "category": "local",
+        "ticketPrice": 5600,
+        "ticketPrice4h": 3800,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.9320532,
+          43.7062072
+        ]
+      },
+      "properties": {
+        "id": "大雪山層雲峡・黒岳スキー場",
+        "name": "大雪山層雲峡・黒岳スキー場",
+        "category": "local",
+        "ticketPrice": 5200,
+        "ticketPrice4h": 5200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.5466881,
+          43.156857
+        ]
+      },
+      "properties": {
+        "id": "国設 南ふらのスキー場",
+        "name": "国設 南ふらのスキー場",
+        "category": "local",
+        "ticketPrice": 2500,
+        "ticketPrice4h": 1500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          143.1833167,
+          43.3554169
+        ]
+      },
+      "properties": {
+        "id": "ぬかびら源泉郷スキー場",
+        "name": "ぬかびら源泉郷スキー場",
+        "category": "local",
+        "ticketPrice": 4500,
+        "ticketPrice4h": 4000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.3352167,
+          43.3249606
+        ]
+      },
+      "properties": {
+        "id": "富良野スキー場",
+        "name": "富良野スキー場",
+        "category": "major",
+        "ticketPrice": 8000,
+        "ticketPrice4h": 8000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.1993446,
+          43.7009475
+        ]
+      },
+      "properties": {
+        "id": "カムイスキーリンクス",
+        "name": "カムイスキーリンクス",
+        "category": "local",
+        "ticketPrice": 5300,
+        "ticketPrice4h": 4600,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.9796442,
+          43.0465836
+        ]
+      },
+      "properties": {
+        "id": "マウントレースイ",
+        "name": "マウントレースイ",
+        "category": "local",
+        "ticketPrice": 6000,
+        "ticketPrice4h": 4800,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.7415166,
+          43.0393066
+        ]
+      },
+      "properties": {
+        "id": "北長沼スキー場",
+        "name": "北長沼スキー場",
+        "category": "local",
+        "ticketPrice": 2200,
+        "ticketPrice4h": 2200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7312696,
+          42.9008036
+        ]
+      },
+      "properties": {
+        "id": "倶知安町旭ヶ丘スキー場",
+        "name": "倶知安町旭ヶ丘スキー場",
+        "category": "local",
+        "ticketPrice": 1500,
+        "ticketPrice4h": 1500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1640489,
+          43.0770503
+        ]
+      },
+      "properties": {
+        "id": "サッポロテイネ",
+        "name": "サッポロテイネ",
+        "category": "major",
+        "ticketPrice": 8400,
+        "ticketPrice4h": 6200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.2772196,
+          43.0270025
+        ]
+      },
+      "properties": {
+        "id": "さっぽろばんけいスキー場",
+        "name": "さっぽろばんけいスキー場",
+        "category": "local",
+        "ticketPrice": 5700,
+        "ticketPrice4h": 4800,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9988865,
+          43.0636212
+        ]
+      },
+      "properties": {
+        "id": "キロロリゾート",
+        "name": "キロロリゾート",
+        "category": "major",
+        "ticketPrice": 8800,
+        "ticketPrice4h": 7400,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.3283563,
+          43.01555
+        ]
+      },
+      "properties": {
+        "id": "札幌藻岩山スキー場",
+        "name": "札幌藻岩山スキー場",
+        "category": "local",
+        "ticketPrice": 4100,
+        "ticketPrice4h": 3500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.6848419,
+          42.8471078
+        ]
+      },
+      "properties": {
+        "id": "ニセコビレッジ",
+        "name": "ニセコビレッジ",
+        "category": "major",
+        "ticketPrice": 9700,
+        "ticketPrice4h": 8300,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.64571152880424,
+          42.84916320743507
+        ]
+      },
+      "properties": {
+        "id": "ニセコアンヌプリ",
+        "name": "ニセコアンヌプリ",
+        "category": "major",
+        "ticketPrice": 7000,
+        "ticketPrice4h": 6000,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.70338335333187,
+          42.865522152583246
+        ]
+      },
+      "properties": {
+        "id": "ニセコグラン・ヒラフ",
+        "name": "ニセコグラン・ヒラフ",
+        "category": "major",
+        "ticketPrice": 6800,
+        "ticketPrice4h": 4400,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.69988832842398,
+          42.89513467993711
+        ]
+      },
+      "properties": {
+        "id": "ニセコHANAZONO",
+        "name": "ニセコHANAZONO",
+        "category": "major",
+        "ticketPrice": 6800,
+        "ticketPrice4h": 4400,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9196695,
+          42.7309325
+        ]
+      },
+      "properties": {
+        "id": "ルスツリゾート",
+        "name": "ルスツリゾート",
+        "category": "major",
+        "ticketPrice": 12000,
+        "ticketPrice4h": 10500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.0702386,
+          43.0730146
+        ]
+      },
+      "properties": {
+        "id": "札幌国際スキー場",
+        "name": "札幌国際スキー場",
+        "category": "major",
+        "ticketPrice": 5700,
+        "ticketPrice4h": 5200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.94034971090394,
+          43.7847852197422
+        ]
+      },
+      "properties": {
+        "id": "北竜町営碧水スキー場",
+        "name": "北竜町営碧水スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.03901427832756,
+          43.8289683614186
+        ]
+      },
+      "properties": {
+        "id": "ASHIMOI KANKO高穂スキー場",
+        "name": "ASHIMOI KANKO高穂スキー場",
+        "category": "local",
+        "ticketPrice": 2000,
+        "ticketPrice4h": 1200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.6065871497702,
+          44.12950195046965
+        ]
+      },
+      "properties": {
+        "id": "あさひスキー場",
+        "name": "あさひスキー場",
+        "category": "local",
+        "ticketPrice": 1400,
+        "ticketPrice4h": 1400,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.67789523640212,
+          44.30679453776763
+        ]
+      },
+      "properties": {
+        "id": "下川スキー場",
+        "name": "下川スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.94034971090394,
+          43.7847852197422
+        ]
+      },
+      "properties": {
+        "id": "美深スキー場",
+        "name": "美深スキー場",
+        "category": "local",
+        "ticketPrice": 700,
+        "ticketPrice4h": 700,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.40352102049698,
+          44.498635665157536
+        ]
+      },
+      "properties": {
+        "id": "北竜町営碧水スキー場",
+        "name": "北竜町営碧水スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.87914320525184,
+          44.32985332552203
+        ]
+      },
+      "properties": {
+        "id": "羽幌町民スキー場「びゅー」",
+        "name": "羽幌町民スキー場「びゅー」",
+        "category": "local",
+        "ticketPrice": 2500,
+        "ticketPrice4h": 1700,
+        "hasNightSki": false
+      }
+    }
+  ]
+}
