@@ -1,4 +1,4 @@
-/* --- 1. 基本変数とリセット --- */
+/* --- 1. Basic Variables & Reset --- */
 :root {
   font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', sans-serif;
   line-height: 1.5;
@@ -12,6 +12,10 @@
   --shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   --radius: 12px;
 
+  /* Pin Colors */
+  --pin-major: #ef4444; /* Red */
+  --pin-local: #3b82f6; /* Blue */
+
   background-color: #f0f2f5;
   color: var(--text-main);
 }
@@ -24,7 +28,7 @@ html, body, #root, .app {
   overflow: hidden;
 }
 
-/* --- 2. 地図コンテナ --- */
+/* --- 2. Map Container --- */
 .map-container {
   height: 100vh;
   width: 100vw;
@@ -34,15 +38,53 @@ html, body, #root, .app {
   z-index: 1;
 }
 
-/* --- 3. フィルターボタン & パネル --- */
+/* --- Custom Map Pins --- */
+.custom-pin-icon {
+  background: transparent;
+  border: none;
+}
 
-/* トグルボタン（閉じた状態） */
+.pin-marker {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease, width 0.2s ease, height 0.2s ease;
+  position: relative;
+  border: 2px solid white;
+}
+
+.pin-marker::after {
+  content: '';
+  width: 5px;
+  height: 5px;
+  background: rgba(255,255,255,0.8);
+  border-radius: 50%;
+}
+
+.pin-marker.major {
+  background-color: var(--pin-major);
+}
+
+.pin-marker.local {
+  background-color: var(--pin-local);
+}
+
+.pin-marker:hover {
+  transform: rotate(-45deg) scale(1.1);
+  z-index: 1000;
+}
+
+/* --- 3. Filter Panel --- */
 .filter-toggle-btn {
   position: absolute;
   top: 16px;
-  right: 16px; /* 右上に配置 (左はズームコントロールがあるため) */
+  right: 16px;
   z-index: 1000;
-  
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -50,7 +92,6 @@ html, body, #root, .app {
   border: none;
   box-shadow: var(--shadow);
   color: var(--text-main);
-  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -62,19 +103,16 @@ html, body, #root, .app {
   transform: scale(0.95);
 }
 
-/* 展開されたパネル */
 .filter-panel-card {
   position: absolute;
   top: 16px;
   right: 16px;
   z-index: 1000;
-  
   width: 260px;
   background: var(--bg-panel);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
   padding: 16px;
-  
   animation: fadeScaleIn 0.2s ease-out;
 }
 
@@ -137,7 +175,7 @@ html, body, #root, .app {
   cursor: pointer;
 }
 
-/* --- 4. リゾート詳細カード (Floating Popup) --- */
+/* --- 4. Resort Card (Floating Popup) --- */
 .resort-card-container {
   position: absolute;
   bottom: 24px;
@@ -146,7 +184,7 @@ html, body, #root, .app {
   width: 90%;
   max-width: 340px;
   z-index: 1001;
-  pointer-events: none; /* 周囲のクリックを地図に通す */
+  pointer-events: none;
 }
 
 .resort-card {
@@ -156,7 +194,6 @@ html, body, #root, .app {
   padding: 16px;
   pointer-events: auto;
   position: relative;
-  
   animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -178,7 +215,7 @@ html, body, #root, .app {
 
 .card-header {
   margin-bottom: 12px;
-  padding-right: 30px; /* 閉じるボタンのスペース */
+  padding-right: 30px;
 }
 
 .card-title {
@@ -194,8 +231,8 @@ html, body, #root, .app {
   font-size: 0.7rem;
   font-weight: 600;
 }
-.tag.major { background: #ffeaa7; color: #d63031; }
-.tag.local { background: #fab1a0; color: #e17055; }
+.tag.major { background: #fee2e2; color: #b91c1c; } /* Reddish for Major */
+.tag.local { background: #dbeafe; color: #1d4ed8; } /* Blueish for Local */
 
 .card-body {
   display: flex;
@@ -254,7 +291,80 @@ html, body, #root, .app {
   opacity: 0.8;
 }
 
-/* アニメーション定義 */
+/* --- 5. Trail Map Modal --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.modal-content {
+  background: white;
+  width: 90%;
+  max-width: 800px;
+  max-height: 90vh;
+  border-radius: var(--radius);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  animation: scaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.modal-header {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.modal-body {
+  flex: 1;
+  overflow: auto;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+  padding: 10px;
+}
+
+.trail-map-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.no-data-container {
+  text-align: center;
+  color: var(--text-sub);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.no-data-icon {
+  opacity: 0.3;
+}
+
+/* Animations */
 @keyframes fadeScaleIn {
   from { opacity: 0; transform: scale(0.9); }
   to { opacity: 1; transform: scale(1); }
@@ -263,4 +373,14 @@ html, body, #root, .app {
 @keyframes slideUp {
   from { transform: translateY(20px); opacity: 0; }
   to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }

@@ -7,9 +7,10 @@ export interface SkiResortProperties {
   ticketPrice: number;
   ticketPrice4h: number;
   hasNightSki: boolean;
+  trailMapUrl?: string | null; // Added field for trail map image URL
 }
 
-// GeoJSONのFeature構造を定義
+// GeoJSON Feature structure
 export interface SkiResortFeature {
   type: 'Feature';
   geometry: {

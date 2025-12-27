@@ -1,23 +1,8 @@
+import React from 'react';
 import { MapContainer, TileLayer, Marker, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { SkiResortFeature } from '../types';
-
-// アイコン設定
-import iconMarker from 'leaflet/dist/images/marker-icon.png';
-import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
-const DefaultIcon = L.icon({
-    iconUrl: iconMarker,
-    iconRetinaUrl: iconRetina,
-    shadowUrl: iconShadow,
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-});
-L.Marker.prototype.options.icon = DefaultIcon;
 
 interface MarkerHandlerProps {
   feature: SkiResortFeature;
@@ -29,15 +14,29 @@ const MarkerHandler: React.FC<MarkerHandlerProps> = ({ feature, onSelect }) => {
   
   // GeoJSON: [lon, lat] -> Leaflet: [lat, lon]
   const [lon, lat] = feature.geometry.coordinates;
+  const category = feature.properties.category;
+
+  // Create Custom DivIcon
+  // Major = Red, Local = Blue (defined in CSS)
+  const customIcon = L.divIcon({
+    className: 'custom-pin-icon',
+    html: `<div class="pin-marker ${category}"></div>`,
+    iconSize: [20, 20],
+    iconAnchor: [10, 20], // Bottom tip center
+    popupAnchor: [0, -20],
+  });
   
   const handleClick = () => {
     onSelect(feature);
-    map.flyTo([lat, lon], 10, { duration: 1.5 });
+    // Maintain current zoom level (scale) instead of forcing a specific zoom
+    // Only center the map on the clicked pin
+    map.flyTo([lat, lon], map.getZoom(), { duration: 1.0 });
   };
 
   return (
     <Marker 
       position={[lat, lon]} 
+      icon={customIcon}
       eventHandlers={{ click: handleClick }}
     />
   );
