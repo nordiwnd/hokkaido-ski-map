@@ -11,8 +11,8 @@
         ]
       },
       "properties": {
-        "id": "IWANAI RESORT",
-        "name": "IWANAI RESORT",
+        "id": "IWANAIRESORT",
+        "name": "IWANAIRESORT",
         "category": "local",
         "ticketPrice": 3000,
         "ticketPrice4h": 2500,
@@ -479,8 +479,8 @@
         ]
       },
       "properties": {
-        "id": "国設 南ふらのスキー場",
-        "name": "国設 南ふらのスキー場",
+        "id": "国設南ふらのスキー場",
+        "name": "国設南ふらのスキー場",
         "category": "local",
         "ticketPrice": 2500,
         "ticketPrice4h": 1500,
@@ -564,7 +564,7 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.7415166,
+          141.741522,
           43.0393066
         ]
       },
@@ -600,8 +600,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.1640489,
-          43.0770503
+          141.1975236,
+          43.0806723
         ]
       },
       "properties": {
@@ -780,8 +780,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.94034971090394,
-          43.7847852197422
+          141.8489737,
+          43.7647685
         ]
       },
       "properties": {
@@ -803,8 +803,8 @@
         ]
       },
       "properties": {
-        "id": "ASHIMOI KANKO高穂スキー場",
-        "name": "ASHIMOI KANKO高穂スキー場",
+        "id": "ASHIMOIKANKO高穂スキー場",
+        "name": "ASHIMOIKANKO高穂スキー場",
         "category": "local",
         "ticketPrice": 2000,
         "ticketPrice4h": 1200,
@@ -852,8 +852,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.94034971090394,
-          43.7847852197422
+          142.3569534,
+          44.4883259
         ]
       },
       "properties": {
@@ -870,13 +870,85 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          142.40352102049698,
-          44.498635665157536
+          141.7823556,
+          44.3160517
         ]
       },
       "properties": {
-        "id": "北竜町営碧水スキー場",
-        "name": "北竜町営碧水スキー場",
+        "id": "羽幌町民スキー場「びゅー」",
+        "name": "羽幌町民スキー場「びゅー」",
+        "category": "local",
+        "ticketPrice": 2500,
+        "ticketPrice4h": 1700,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          141.1331708,
+          43.1460857
+        ]
+      },
+      "properties": {
+        "id": "スノークルーズオーンズ",
+        "name": "スノークルーズオーンズ",
+        "category": "local",
+        "ticketPrice": 5000,
+        "ticketPrice4h": 4100,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.9758106,
+          43.1776655
+        ]
+      },
+      "properties": {
+        "id": "小樽天狗山ロープウエイ・スキー場",
+        "name": "小樽天狗山ロープウエイ・スキー場",
+        "category": "local",
+        "ticketPrice": 3500,
+        "ticketPrice4h": 3500,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.7648507,
+          43.1529347
+        ]
+      },
+      "properties": {
+        "id": "コンサドーレ仁木スキーパーク",
+        "name": "コンサドーレ仁木スキーパーク",
+        "category": "local",
+        "ticketPrice": 2140,
+        "ticketPrice4h": 1280,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4045433,
+          42.6439041
+        ]
+      },
+      "properties": {
+        "id": "寿都町民スキー場",
+        "name": "寿都町民スキー場",
         "category": "local",
         "ticketPrice": 0,
         "ticketPrice4h": 0,
@@ -888,16 +960,232 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          141.87914320525184,
-          44.32985332552203
+          140.4045433,
+          42.6439041
         ]
       },
       "properties": {
-        "id": "羽幌町民スキー場「びゅー」",
-        "name": "羽幌町民スキー場「びゅー」",
+        "id": "東山公園スキー場",
+        "name": "東山公園スキー場",
         "category": "local",
-        "ticketPrice": 2500,
+        "ticketPrice": 2450,
+        "ticketPrice4h": 1420,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4045433,
+          42.6439041
+        ]
+      },
+      "properties": {
+        "id": "長万部町営スキー場",
+        "name": "長万部町営スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.4045433,
+          42.6439041
+        ]
+      },
+      "properties": {
+        "id": "今金町ピリカスキー場",
+        "name": "今金町ピリカスキー場",
+        "category": "local",
+        "ticketPrice": 4400,
+        "ticketPrice4h": 2640,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          140.8331866,
+          42.499615
+        ]
+      },
+      "properties": {
+        "id": "室蘭市だんパラスキー場",
+        "name": "室蘭市だんパラスキー場",
+        "category": "local",
+        "ticketPrice": 2200,
+        "ticketPrice4h": 1400,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.0205117,
+          42.8406561
+        ]
+      },
+      "properties": {
+        "id": "安平町営安平山スキー場",
+        "name": "安平町営安平山スキー場",
+        "category": "local",
+        "ticketPrice": 1700,
         "ticketPrice4h": 1700,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.175738,
+          42.8762921
+        ]
+      },
+      "properties": {
+        "id": "穂別スキー場",
+        "name": "穂別スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.0030797,
+          42.3696269
+        ]
+      },
+      "properties": {
+        "id": "広富スキー場",
+        "name": "広富スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.7781069,
+          43.0247889
+        ]
+      },
+      "properties": {
+        "id": "白銀台スキー場",
+        "name": "白銀台スキー場",
+        "category": "local",
+        "ticketPrice": 1600,
+        "ticketPrice4h": 1200,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.7781069,
+          43.0247889
+        ]
+      },
+      "properties": {
+        "id": "メムロスキー場",
+        "name": "メムロスキー場",
+        "category": "local",
+        "ticketPrice": 3100,
+        "ticketPrice4h": 2080,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4315695,
+          43.396093
+        ]
+      },
+      "properties": {
+        "id": "中富良野北星スキー場",
+        "name": "中富良野北星スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4793159,
+          43.8234042
+        ]
+      },
+      "properties": {
+        "id": "とうま山スキー場",
+        "name": "とうま山スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.7781069,
+          43.0247889
+        ]
+      },
+      "properties": {
+        "id": "愛別ファミリースキー場",
+        "name": "愛別ファミリースキー場",
+        "category": "local",
+        "ticketPrice": 330,
+        "ticketPrice4h": 330,
+        "hasNightSki": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          142.4793159,
+          43.8234042
+        ]
+      },
+      "properties": {
+        "id": "上川町営中山スキー場",
+        "name": "上川町営中山スキー場",
+        "category": "local",
+        "ticketPrice": 0,
+        "ticketPrice4h": 0,
         "hasNightSki": false
       }
     }
