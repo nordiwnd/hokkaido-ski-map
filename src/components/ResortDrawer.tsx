@@ -8,62 +8,47 @@ interface ResortDrawerProps {
 }
 
 export const ResortDrawer: React.FC<ResortDrawerProps> = ({ resort, onClose }) => {
-  const isOpen = !!resort;
-  
-  if (!resort) return <div className="drawer" />;
+  if (!resort) return null;
 
   const { name, category, ticketPrice, ticketPrice4h } = resort.properties;
 
   return (
-    <div className={`drawer ${isOpen ? 'open' : ''}`}>
-      <div className="drawer-content">
-        <button className="close-btn" onClick={onClose} aria-label="Close"><X /></button>
+    <div className="resort-card-container">
+      <div className="resort-card">
+        <button className="card-close-btn" onClick={onClose} aria-label="Close">
+          <X size={20} />
+        </button>
         
-        <h2>{name}</h2>
-        
-        <div style={{marginBottom: '15px'}}>
+        <div className="card-header">
+          <h2 className="card-title">{name}</h2>
           <span className={`tag ${category}`}>
-            {category === 'major' ? '大規模リゾート' : 'ローカルスキー場'}
+            {category === 'major' ? '大規模' : 'ローカル'}
           </span>
         </div>
 
-        <div style={{display: 'grid', gap: '10px'}}>
-          <div style={{display: 'flex', alignItems: 'center', gap: '8px'}}>
-            <Ticket size={20} />
-            <div>
-              <strong>1日券: </strong> 
-              {ticketPrice === 0 ? '無料/不明' : `${ticketPrice.toLocaleString()}円`}
+        <div className="card-body">
+          <div className="price-row">
+            <div className="price-item">
+              <span className="price-label"><Ticket size={14} /> 1日券</span>
+              <span className="price-value">
+                {ticketPrice === 0 ? '不明/無料' : `¥${ticketPrice.toLocaleString()}`}
+              </span>
             </div>
-          </div>
-          <div style={{display: 'flex', alignItems: 'center', gap: '8px', color: '#666'}}>
-            <Ticket size={20} />
-            <div>
-              <strong>4時間券: </strong> 
-              {ticketPrice4h === 0 ? '-' : `${ticketPrice4h.toLocaleString()}円`}
+            <div className="price-item sub">
+              <span className="price-label">4時間</span>
+              <span className="price-value">
+                {ticketPrice4h === 0 ? '-' : `¥${ticketPrice4h.toLocaleString()}`}
+              </span>
             </div>
           </div>
           
-          <div style={{marginTop: '10px'}}>
-            <button 
-                style={{
-                    width: '100%', 
-                    padding: '10px', 
-                    background: '#007bff', 
-                    color: 'white', 
-                    border: 'none', 
-                    borderRadius: '5px',
-                    display: 'flex', 
-                    justifyContent: 'center', 
-                    alignItems: 'center',
-                    gap: '8px',
-                    cursor: 'pointer'
-                }}
-                onClick={() => alert('今後ゲレンデマップ機能を追加予定')}
-            >
-                <MapIcon size={18} />
-                ゲレンデマップを見る
-            </button>
-          </div>
+          <button 
+              className="action-btn"
+              onClick={() => alert('今後ゲレンデマップ機能を追加予定')}
+          >
+              <MapIcon size={16} />
+              マップ詳細
+          </button>
         </div>
       </div>
     </div>

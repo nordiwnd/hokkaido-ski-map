@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { SlidersHorizontal, X } from 'lucide-react';
 import type { FilterState } from '../types';
 
 interface FilterPanelProps {
@@ -8,36 +9,57 @@ interface FilterPanelProps {
 }
 
 export const FilterPanel: React.FC<FilterPanelProps> = ({ filters, updateFilter, count }) => {
-  return (
-    <div className="ui-overlay">
-      <h3>北海道スキー場マップ</h3>
-      <p style={{fontSize: '0.8rem', color: '#666'}}>表示中: {count}件</p>
-      
-      <div className="filter-group">
-        <label>
-          一日券予算: {filters.maxPrice >= 15000 ? '上限なし' : `~${filters.maxPrice}円`}
-        </label>
-        <input 
-          type="range" 
-          min="0" 
-          max="15000" 
-          step="500" 
-          value={filters.maxPrice} 
-          onChange={(e) => updateFilter('maxPrice', Number(e.target.value))}
-          style={{width: '100%'}}
-        />
-      </div>
+  const [isOpen, setIsOpen] = useState(false);
 
-      <div className="filter-group">
-        <label style={{display: 'flex', alignItems: 'center', cursor: 'pointer'}}>
+  // 閉じた状態：トグルボタンのみ表示
+  if (!isOpen) {
+    return (
+      <button 
+        className="filter-toggle-btn"
+        onClick={() => setIsOpen(true)}
+        aria-label="検索フィルターを開く"
+      >
+        <SlidersHorizontal size={20} />
+      </button>
+    );
+  }
+
+  // 開いた状態：パネル表示
+  return (
+    <div className="filter-panel-card">
+      <div className="filter-header">
+        <h3>条件検索 ({count}件)</h3>
+        <button className="close-icon-btn" onClick={() => setIsOpen(false)}>
+          <X size={20} />
+        </button>
+      </div>
+      
+      <div className="filter-content">
+        <div className="filter-group">
+          <label>
+            <span>1日券予算: <span className="price-display">{filters.maxPrice >= 15000 ? '上限なし' : `~${filters.maxPrice.toLocaleString()}円`}</span></span>
+          </label>
           <input 
-            type="checkbox" 
-            checked={filters.showNightSkiOnly}
-            onChange={(e) => updateFilter('showNightSkiOnly', e.target.checked)}
-            style={{marginRight: '8px'}}
+            type="range" 
+            min="0" 
+            max="15000" 
+            step="500" 
+            value={filters.maxPrice} 
+            onChange={(e) => updateFilter('maxPrice', Number(e.target.value))}
+            className="slider"
           />
-          ナイター営業あり
-        </label>
+        </div>
+
+        <div className="filter-group">
+          <label className="checkbox-label">
+            <input 
+              type="checkbox" 
+              checked={filters.showNightSkiOnly}
+              onChange={(e) => updateFilter('showNightSkiOnly', e.target.checked)}
+            />
+            ナイター営業あり
+          </label>
+        </div>
       </div>
     </div>
   );
